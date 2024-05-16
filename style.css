@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.Navigasi {
+    width: 100%;
+    height: 70px;
+    color: white; 
+    position: fixed;  
+}
+
+
+
+.Logo{
+float: left;
+justify-content: center;
+align-content: center;
+font-size: 70px;
+margin-top: 8px;
+margin-left: 17px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+}
+
+
+
+.menu{
+    margin-left: 600px;
+    padding-top: 26px;
+    font-size: 23px;
+}
+
+
+
+.menu ul li{
+list-style: none;
+display: inline-block;
+margin-left: 25px;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.menu ul li a:hover{
+    color:lightskyblue;
+    font-style: italic;
+}
+
+
+
+.baner{
+    width: 100%;
+    height: 100vh;;
+  background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab);
+   background-size: 300% 300%;
+   animation: color 12s ease-in-out infinite;
+      text-align: center;
+      justify-content: space-between;      
+      display: flex;
+      
+  }
+  
+  @keyframes color {
+  0%{
+      background-position: 0 50%;
+  }
+  
+  50%{
+      background-position: 100% 50%;
+  }
+  
+  100%{
+      background-position: 0 50%;
+  }
+  
+  }
+
+.baner div {
+    align-items: center;
+    display: flex;
+}
+
+.baner img{
+    border-radius: 200px;
+    width: 250px;
+    height: auto;
+    border: 6px solid white;
+    margin: 60px 149px;
+    margin-left: 0;
+}
+
+.kiri{
+    margin-left: 100px;
+}
+
+.kiri div{
+    flex-direction: column;
+}
+
+.baner h1{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.baner button{
+   margin-top: 60px; 
+   padding: 10px;
+   width: 400px;
+   border-radius: 50px;
+   border: none;
+}
+
+.baner button:hover{
+    background-color: #3b5999;
+    border: 1px solid white;
+    color: white;
+}
+
+
+  
+  @keyframes blink {
+    0% {
+      border-right-color: rgba(255,255,255,.75);
+      ;
+    }
+  
+    100% {
+      border-right-color: transparent;
+    }
+  }
+
+  .kiri{
+    position: relative;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: 0px;
+  animation: typewriter 2s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;
+}
+
+.tulisan{
+    font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(to right,#ffffff, #f7f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+
+@keyframes typewriter {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 740px;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      border-right-color: rgba(255,255,255,.75);
+      ;
+    }
+  
+    100% {
+      border-right-color: transparent;
+    }
+  }
+
+
+
+
+
+.boxpendidikan{
+    text-align: center;
+    color: #4d4d4d;
+    align-content: center;
+ 
+}
+
+
+.boxtengah{
+    text-align: center;
+    align-content:center ;
+}
+
+.box-menu{
+    padding-top: 130px;
+    
+}
+
+
+
+.boxkiri,.boxtengah,.boxkanan{
+    width: 294px;
+    height: 320px;
+    background-color: #f0f0f0;
+    text-align:center ;
+    padding: 30px 30px ;
+    margin: 70px 20px 20px 55px;
+    border-radius: 10px;
+    float: left;
+    position: relative;background: repeating-conic-gradient(from var(-a),aff2770 0%, eff2778 5%, transparent 5%, transparent 40%, #ff2770 50%);
+    animation: animate 4s linear infinite;
+}
+
+.sub{
+  flex-grow: 1;
+}
+
+
+
+
+
+.boxkiri:hover,.boxtengah:hover,.boxkanan:hover{
+background-color: #ee9f38;
+color: white;
+}
+
+
+.boxpendidikan h3,p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+
+.menu>ul>li>button {
+  border: none;
+  font-size: 17px;
+  padding: 1em 2em;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 1;
+  background: #caf0f8;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 #333,
+             2px 2px 200px #ffba08 inset;
+  color: #fff;
+}
+
+
+.menu>ul>li>button:active {
+  transform: scale(.98);
+}
+
+
+.menu>ul>li>button:hover {
+  box-shadow: 2px 2px 0 #333,
+             2px 2px 200px #003566 inset;
+}
+
+
+.menu>ul>li>button::before {
+  content: '';
+  position: absolute;
+  left: -41%;
+  width: 150%;
+  height: 300%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 #333,
+             0 0 0 8px #d00000 inset,
+             0 0 0 16px #dc2f02 inset,
+             0 0 0 24px #e85d04 inset,
+             0 0 0 32px #f48c06 inset,
+             0 0 0 40px #faa307 inset;
+  z-index: -1;
+  transition: .2s;
+}
+
+.menu>ul>li>button:active::before {
+  opacity: .001;
+  box-shadow: 2px 2px 200px #8e90ff inset;
+}
+
+.menu>ul>li>button:hover::before {
+  box-shadow: 2px 2px 0 #333,
+             0 0 0 8px #90e0ef inset,
+             0 0 0 16px #48cae4 inset,
+             0 0 0 24px #00b4d8 inset,
+             0 0 0 32px #0096c7 inset,
+             0 0 0 40px #0077b6 inset;
+  left: -9%;
+  width: 150%;
+  height: 300%;
+}
